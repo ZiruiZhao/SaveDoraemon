@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.ly.cloud.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.ly.cloud.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Home</servlet-name>
+        <servlet-class>com.ly.cloud.SaveDoraemonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Home</servlet-name>
+        <url-pattern>/Home</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>test</servlet-name>
+        <servlet-class>com.ly.cloud.testServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>test</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>add</servlet-name>
+        <servlet-class>com.ly.cloud.AddServlet</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>add</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>view</servlet-name>
+        <servlet-class>com.ly.cloud.ViewServlet</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>view</servlet-name>
+        <url-pattern>/view</url-pattern>
+    </servlet-mapping>
+		
+	<servlet>
+        <servlet-name>send</servlet-name>
+        <servlet-class>com.ly.cloud.SendServlet</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>send</servlet-name>
+        <url-pattern>/send</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>com.ly.cloud.logoutServlet</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>	
+	<welcome-file-list>
+        <welcome-file>pages/Login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
